@@ -11,6 +11,9 @@ if [ "$1" = "-noecho" ]; then
   if [ -e "/usr/bin/JolieTestSuiteCG" ]; then
   sudo rm /usr/bin/JolieTestSuiteCG
   fi
+  if [ -e "/usr/bin/JolieTestSuiteCGT" ]; then
+  sudo rm /usr/bin/JolieTestSuiteCGT
+  fi
 else
   echo "Trying to uninstall JolieTestSuite..."
   if [ -d "/usr/lib/JolieTestSuite" ]; then

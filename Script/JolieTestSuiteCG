@@ -1,3 +1,3 @@
 #!/bin/sh
 JTS_HOME=/usr/lib/JolieTestSuite
-jolie $JTS_HOME/__client_generator/genarate_clients.ol "$@"
+jolie $JTS_HOME/__clients_generator/generate_clients.ol "$@" ./test_suite/ yes
