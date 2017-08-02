@@ -10,6 +10,7 @@ sudo ./uninstallJTS.sh -noecho
 echo "installing JolieTestSuite/ to /usr/lib/"
 sudo mkdir /usr/lib/JolieTestSuite
 sudo cp -R JolieTestSuite/* /usr/lib/JolieTestSuite/
+sudo rm -r JolieTestSuite
 echo "enable command line control..."
 echo "  JolieTestSuite <serviceToTest>.ol -> run the test"
 sudo cp Script/JolieTestSuite /usr/bin
