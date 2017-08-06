@@ -13,16 +13,16 @@ rm -r JolieTestSuite
 
 echo "enable command line control..."
 echo "  JolieTestSuite <serviceToTest>.ol -> run the test"
-cp Script/JolieTestSuite /usr/bin
+cp ./Script/JolieTestSuite /usr/bin
 
 echo "  JolieTestSuiteT <serviceToTest>.ol -> run test in trace mode"
-cp Script/JolieTestSuiteT /usr/bin
+cp ./Script/JolieTestSuiteT /usr/bin
 
 echo "  JolieTestSuiteCG <serviceToTest>.ol -> genarate client"
-cp Script/JolieTestSuiteCG /usr/bin
+cp ./Script/JolieTestSuiteCG /usr/bin
 
 echo "  JolieTestSuiteCGT <serviceToTest>.ol -> generate client in trace mode"
-cp Script/JolieTestSuiteCGT /usr/bin
+cp ./Script/JolieTestSuiteCGT /usr/bin
 
 echo "JolieTestSuite Installed!!"
 echo ""
