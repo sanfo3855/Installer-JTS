@@ -5,28 +5,24 @@ if [ "$1" = "-repoGet" ]; then
   echo "------------------------------"
   echo ""
 fi
-sudo ./uninstallJTS.sh -noecho
+./uninstallJTS.sh -noecho
 echo "installing JolieTestSuite/ to /usr/lib/"
-sudo mkdir /usr/lib/JolieTestSuite
-sudo cp -R JolieTestSuite/* /usr/lib/JolieTestSuite/
-sudo rm -r JolieTestSuite
+mkdir /usr/lib/JolieTestSuite
+cp -R JolieTestSuite/* /usr/lib/JolieTestSuite/
+rm -r JolieTestSuite
 
 echo "enable command line control..."
 echo "  JolieTestSuite <serviceToTest>.ol -> run the test"
-sudo cp Script/JolieTestSuite /usr/bin
-sudo chmod +x /usr/bin/JolieTestSuite
+cp Script/JolieTestSuite /usr/bin
 
 echo "  JolieTestSuiteT <serviceToTest>.ol -> run test in trace mode"
-sudo cp Script/JolieTestSuiteT /usr/bin
-sudo chmod +x /usr/bin/JolieTestSuiteT
+cp Script/JolieTestSuiteT /usr/bin
 
 echo "  JolieTestSuiteCG <serviceToTest>.ol -> genarate client"
-sudo cp Script/JolieTestSuiteCG /usr/bin
-sudo chmod +x /usr/bin/JolieTestSuiteCG
+cp Script/JolieTestSuiteCG /usr/bin
 
 echo "  JolieTestSuiteCGT <serviceToTest>.ol -> generate client in trace mode"
-sudo cp Script/JolieTestSuiteCGT /usr/bin
-sudo chmod +x /usr/bin/JolieTestSuiteCGT
+cp Script/JolieTestSuiteCGT /usr/bin
 
 echo "JolieTestSuite Installed!!"
 echo ""
