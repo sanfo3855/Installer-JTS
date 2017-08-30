@@ -15,6 +15,9 @@ if [ "$1" = "-noecho" ]; then
   if [ -e "/usr/bin/JolieTestSuiteCGT" ]; then
   sudo rm /usr/bin/JolieTestSuiteCGT
   fi
+  #if [ -e "/usr/bin/JolieMetadata" ]; then
+  #sudo rm /usr/bin/JolieMetadata
+  #fi
 else
   echo "Trying to uninstall JolieTestSuite..."
   if [ -d "/usr/lib/JolieTestSuite" ]; then
@@ -29,6 +32,12 @@ else
     if [ -e "/usr/bin/JolieTestSuiteCG" ]; then
     sudo rm /usr/bin/JolieTestSuiteCG
     fi
+    if [ -e "/usr/bin/JolieTestSuiteCGT" ]; then
+    sudo rm /usr/bin/JolieTestSuiteCGT
+    fi
+    #if [ -e "/usr/bin/JolieMetadata" ]; then
+    #sudo rm /usr/bin/JolieMetadata
+    #fi
     echo "  command line control disabled"
     echo "Done!"
     echo ""

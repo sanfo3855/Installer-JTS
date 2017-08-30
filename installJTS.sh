@@ -13,7 +13,6 @@ echo "enable command line control..."
 echo "  JolieTestSuite <serviceToTest>.ol -> run the test"
 sudo cp Script/JolieTestSuite /usr/bin
 sudo chmod +x /usr/bin/JolieTestSuite
-
 echo "  JolieTestSuiteT <serviceToTest>.ol -> run test in trace mode"
 sudo cp Script/JolieTestSuiteT /usr/bin
 sudo chmod +x /usr/bin/JolieTestSuiteT
@@ -24,6 +23,10 @@ sudo chmod +x /usr/bin/JolieTestSuiteCG
 echo "  JolieTestSuiteCGT <serviceToTest>.ol -> generate client in trace mode"
 sudo cp Script/JolieTestSuiteCGT /usr/bin
 sudo chmod +x /usr/bin/JolieTestSuiteCGT
+
+#echo "  JolieMetadata <serviceToGetMetadata>.ol -> get all metadata of a service"
+#sudo cp Script/JolieMetadata /usr/bin
+#sudo chmod +x /usr/bin/JolieMetadata
 
 echo "JolieTestSuite Installed!!"
 echo ""
