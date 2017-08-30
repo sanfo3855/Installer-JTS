@@ -10,14 +10,14 @@ sudo cp -R JolieTestSuite/* /usr/lib/JolieTestSuite/
 sudo rm -r JolieTestSuite
 
 echo "enable command line control..."
-echo "  JolieTestSuite <serviceToTest>.ol -> run the test"
+echo "  JolieTestSuite <serviceToTest>.ol -> run test"
 sudo cp Script/JolieTestSuite /usr/bin
 sudo chmod +x /usr/bin/JolieTestSuite
 echo "  JolieTestSuiteT <serviceToTest>.ol -> run test in trace mode"
 sudo cp Script/JolieTestSuiteT /usr/bin
 sudo chmod +x /usr/bin/JolieTestSuiteT
 
-echo "  JolieTestSuiteCG <serviceToTest>.ol -> genarate client"
+echo "  JolieTestSuiteCG <serviceToTest>.ol -> generate client"
 sudo cp Script/JolieTestSuiteCG /usr/bin
 sudo chmod +x /usr/bin/JolieTestSuiteCG
 echo "  JolieTestSuiteCGT <serviceToTest>.ol -> generate client in trace mode"
