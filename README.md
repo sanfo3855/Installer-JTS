@@ -4,13 +4,13 @@ Installer linux for the tool JolieTestSuite, used for testing microservices writ
 
 [0 - Installing](https://github.com/sanfo3855/Installer-JTS#installing)[/Uninstalling](https://github.com/sanfo3855/Installer-JTS#uninstalling)
 
-[1 - Requirement](https://github.com/sanfo3855/Installer-JTS#requirement)
+[1 - Requirement](https://github.com/sanfo3855/Installer-JTS#1---requirement)
 
-[1.1 - Format of init.ol](https://github.com/sanfo3855/Installer-JTS#format-of-initol)
+[1.1 - Format of init.ol](https://github.com/sanfo3855/Installer-JTS#11---format-of-initol)
 
-[1.2 - Format of test.ol](https://github.com/sanfo3855/Installer-JTS#format-of-a-testnameol)
+[1.2 - Format of test.ol](https://github.com/sanfo3855/Installer-JTS#12---format-of-a-testnameol)
 
-[2 - JolieTestSuite Usage](https://github.com/sanfo3855/JoUnit#jolietestsuite-usage)
+[2 - JolieTestSuite Usage](https://github.com/sanfo3855/JoUnit#2---jolietestsuite-usage)
 
 
 
@@ -75,7 +75,7 @@ For "Goal" we mean something that needs to be executed successfully for proceedi
 
 If, for example, ```<testname2>```'s goal has a fault, it recursively stop every super-goal in waiting.
     
-### 1.2 -Format of a ```<testname.ol>```
+### 1.2 - Format of a ```<testname.ol>```
 
 If you need ```dependencies.ol.test``` file, you must include it in ```<testname>.ol```
 
