@@ -10,7 +10,7 @@ Installer linux for the tool JolieTestSuite, used for testing microservices writ
 
 [1.2 - Format of test.ol](https://github.com/sanfo3855/Installer-JTS#12---format-of-a-testnameol)
 
-[2 - JolieTestSuite Usage](https://github.com/sanfo3855/JoUnit#2---jolietestsuite-usage)
+[2 - JolieTestSuite Usage](https://github.com/sanfo3855/Installer-JTS#2---jolietestsuite-usage)
 
 
 
