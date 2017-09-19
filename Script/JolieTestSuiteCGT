@@ -23,4 +23,38 @@
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
 JTS_HOME=/usr/lib/JolieTestSuite
-jolie --trace $JTS_HOME/__clients_generator/generate_clients.ol "$@" ./test_suite yes
+if [ $# != 0 ]; then
+
+  if [ $# = 1 ]; then
+    if [ "$1" = "-h" ]; then
+      echo ""
+      echo " JolieTestSuiteCG <servicename>.ol"
+      echo " | DEFAULT BEAHVIOUR"
+      echo " |  client generation in ./testsuite"
+      echo " |  data generation no"
+      echo ""
+      echo " JolieTestSuiteCG <servicename>.ol <destination_folder> <yes/no>"
+      echo " | CUSTOM BEHAVIOUR"
+      echo " |  client generation in <destination_folder>"
+      echo " |  data generation <yes/no>"
+      echo " "
+    else
+      jolie --trace $JTS_HOME/__clients_generator/generate_clients.ol "$1" ./test_suite/ no
+      jolie --trace $JTS_HOME/__metadata_tools/getDependenciesPort.ol "$1"
+    fi
+  else
+    if [ $# = 3 ]; then
+      jolie --trace $JTS_HOME/__clients_generator/generate_clients.ol "$1" "$2" "$3"
+      jolie --trace $JTS_HOME/__metadata_tools/getDependenciesPort.ol "$1"
+    else
+      echo "ERROR!!"
+      echo ""
+      echo "JolieTestSuiteCG -h for HELP"
+    fi
+  fi
+
+else
+  echo "ERROR!!"
+  echo ""
+  echo "JolieTestSuiteCG -h for HELP"
+fi
