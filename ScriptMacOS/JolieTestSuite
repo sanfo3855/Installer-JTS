@@ -1,0 +1,3 @@
+#!/bin/sh
+JTS_HOME=/usr/local/lib/JolieTestSuite
+jolie $JTS_HOME/main_test_suite.ol "$@"
